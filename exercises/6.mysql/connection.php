@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 function openConnection() {
 
  // Try to figure out what these should be for you
@@ -16,15 +17,17 @@ function openConnection() {
  $db        = "becode_genk";
 
 
- /* Online dB credentials
-$dbhost    = "136.144.221.129";
-$dbuser    = "genk";
-$dbpass    = "{)+O^O@iw!].zmjT";
-$db        = "becode_genk";
-*/
+  //Online dB credentials
+// $dbhost    = "136.144.221.129";
+// $dbuser    = "genk";
+// $dbpass    = "{)+O^O@iw!].zmjT";
+// $db        = "becode_genk";
+
 
  // Try to understand what happens here
  // the connection needs to be created this way with the 4 perameters to get the database running:
+ //Running a connection with the function new mysqli and everything in it:
+ //This will be the connection to our database
  $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn->error);
 
  // Why we do this here

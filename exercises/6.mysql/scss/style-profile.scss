@@ -1,0 +1,80 @@
+//standard var and values
+$bgcolor: #a2b9bc;
+$bgcolor2: #8b7623;
+$bgcolor3: #B8860B;
+$bgcolor4: #DBD76B;
+$textcolor:darkblue;
+$fontsize:14px;
+$border-radius: 50%;
+
+
+
+//variables
+a {
+  text-decoration: none;
+}
+body {
+  background-color: $bgcolor;
+  color:$textcolor ;
+  font-size:$fontsize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+align-self: center;
+width: 100vw;
+height: 100vh;
+
+}
+
+
+.wrapper {
+  // background-color: #796309;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: $bgcolor4;
+  width: 320px;
+  height: 820px;
+
+
+}
+
+.allData {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.pr {
+  background-color: $bgcolor2;
+  color: $textcolor;
+  font-size: $fontsize;
+
+
+
+}
+
+.avatar{
+  vertical-align: middle;
+  background-color: white;
+  overflow: hidden;
+  display: block;
+  border-radius: $border-radius;
+  justify-content: center;
+
+
+
+width:60px;
+height:60px;
+ img{
+width: 100%;
+height: auto;
+}
+}
